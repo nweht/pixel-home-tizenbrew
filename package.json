@@ -1,0 +1,11 @@
+{
+  "name": "pixel-home-tizenbrew",
+  "version": "0.1.0",
+  "description": "Launcher oscuro en pixel art: tarjetas HDMI, apps, reloj y clima. Configurable desde el TV.",
+  "packageType": "app",
+  "appName": "Pixel Home",
+  "appPath": "index.html",
+  "keys": [],
+  "license": "MIT",
+  "files": ["index.html", "style.css", "app.js", "sprites.js", "img"]
+}

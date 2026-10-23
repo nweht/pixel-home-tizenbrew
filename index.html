@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pixel Home</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stage">
+  <header id="top">
+    <div id="left">
+      <canvas id="logo" width="20" height="9"></canvas>
+      <div id="time">
+        <div id="clock"><span id="hh">--</span><span id="colon">:</span><span id="mm">--</span></div>
+        <div id="date">&nbsp;</div>
+        <div id="hearts"><span>VIDA</span></div>
+      </div>
+    </div>
+    <div id="weather">
+      <canvas id="wicon" width="16" height="16"></canvas>
+      <div id="wtext">
+        <div id="wtemp">--°</div>
+        <div id="wdesc">Cargando clima</div>
+        <div id="wcity"></div>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <h2 class="rowtitle">CONSOLAS Y ENTRADAS</h2>
+    <div class="row" id="row0"><div class="track" id="track0"></div></div>
+    <h2 class="rowtitle">APPS</h2>
+    <div class="row" id="row1"><div class="track" id="track1"></div></div>
+  </main>
+
+  <footer id="hint">MOVER CON LAS FLECHAS &nbsp;&nbsp; OK PARA ABRIR</footer>
+
+  <div id="menu" class="hidden">
+    <div id="menubox">
+      <h3 id="menutitle"></h3>
+      <ul id="menulist"></ul>
+    </div>
+  </div>
+
+  <div id="prompt" class="hidden">
+    <div id="promptbox">
+      <h3 id="prompttitle"></h3>
+      <input id="promptinput" type="text" autocomplete="off">
+      <p>OK para escribir, luego OK de nuevo para guardar</p>
+    </div>
+  </div>
+
+  <div id="toast" class="hidden"></div>
+</div>
+<script src="sprites.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
